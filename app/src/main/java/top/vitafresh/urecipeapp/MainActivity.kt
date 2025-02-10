@@ -20,28 +20,20 @@ class MainActivity : ComponentActivity() {
         setContent {
             URecipeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    RecipeScreen(modifier = Modifier.padding(innerPadding))
+//                    Text("Hello!!!!")
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    URecipeAppTheme {
-        Greeting("Android")
-    }
-}
+
+//@Preview(showBackground = true)
+//@Composable
+//fun GreetingPreview() {
+//    URecipeAppTheme {
+//        RecipeScreen()
+//    }
+//}

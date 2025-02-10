@@ -44,7 +44,7 @@ dependencies {
     // Compose Viewmodel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") // або останню версію
     // Network calls
-    implementation("com.squareup.retofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
     // Json to Kotlin mapping
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     // Image loading
